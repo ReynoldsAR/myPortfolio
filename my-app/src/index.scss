@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: none;
+  font-size: 20px;
+}
+
+h1 {
+  font-family: 'Gabriola';
+  font-size: 80px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+.darkBody {
+  color: rgb(194, 194, 194);
+}
+
+.nameTitle {
+  padding: 160px 10px;
+  background-color: #403849;
+  text-align: center;
+  color: white;
+  font-family: 'Gabriola';
+}
+
