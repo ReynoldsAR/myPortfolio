@@ -1,12 +1,21 @@
 import React from 'react'
+import {Nav, Navbar} from 'react-bootstrap'
+import {LinkContainer} from "react-router-bootstrap"
 
-const HomePage = () => (
-    <div>
-        <h1>Amber Reynolds</h1>
-        <p>
-            Hello world! This is a test
-        </p>
-    </div>
+const Navigation = () => (
+    <>
+        <Navbar className="mainNav">
+            <LinkContainer className="navTab" to="/">
+                <Nav.Link>Home</Nav.Link>
+            </LinkContainer>
+            <LinkContainer className="navTab" to="/about">
+                <Nav.Link>About</Nav.Link>
+            </LinkContainer>
+            <LinkContainer className="navTab" to="/contact">
+                <Nav.Link>Contact Me</Nav.Link>
+            </LinkContainer>
+        </Navbar>
+    </>
 )
 
-export default HomePage
+export default Navigation

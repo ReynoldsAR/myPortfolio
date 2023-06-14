@@ -1,30 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
+$primaryColor: #403849;
+$secondaryColor: #B66875;
+$tertiaryColor: #E88B70;
+
 body {
   margin: 0;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Josefin Sans";
   background: none;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 h1 {
-  font-family: 'Gabriola';
-  font-size: 80px;
+  font-size: 70px;
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 35px;
+}
+
+hr {
+  border-top: 3px solid #3b3b3b;
+  border-radius: 5px;
 }
 
 .darkBody {
   color: rgb(194, 194, 194);
 }
 
-.nameTitle {
-  padding: 160px 10px;
-  background-color: #403849;
+.homeHeader {
+  padding: 20px 10px 50px;
+  background-color: $primaryColor;
+  height: 90vh;
   text-align: center;
   color: white;
-  font-family: 'Gabriola';
+  font-family: 'Berkshire Swash';
 }
 
+.avatarPicture {
+  max-height: 200px;
+  min-height: 200px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.mainNav {
+  background-color: $primaryColor;
+  color: white;
+  justify-content:end;
+  height: 15vh;
+}
+
+.navTab {
+  margin:20px;
+  padding: 10px 20px;
+  border-radius: 3em / 4em;
+  transition: background-color 0.5s;
+}
+
+.navTab:hover {
+  background-color: $secondaryColor;
+}
+
+.cardTitle {
+  font-size: 30px;
+  font-weight:bold;
+  padding-bottom: 10px;
+}
+
+.cardText {
+  font-size: 20px;
+}
+
+.vbox {
+  display: flex;
+  justify-content: center;
+  padding: 0px 15%;
+}
+
+.homeCards {
+  font-family: "Josefin Sans";
+  font-size: 20px;
+  width: 33%;
+  margin: 20px;
+  border-radius: 5%;
+  border: 5px solid lightgray;
+  overflow: hidden;
+}
+
+.homeCardTitle {
+  text-align: center;
+  background-color: $primaryColor;
+  color: white;
+  padding: 10px;
+  border: none;
+}
+
+#introCard {
+  text-align: center;
+  font-family: "Josefin Sans";
+  padding: 50px 25%;
+  border: none;
+}
+
+#skillCardsWrap {
+  background: linear-gradient(white 0%,
+      white 40%,
+      $tertiaryColor 40%,
+      $tertiaryColor 100%);
+}
+
+#projectsDiv {
+  text-align: center;
+  padding: 50px 0;
+  margin: 0px 230px;
+  background-color: rgba(255, 255, 255);
+  border-radius: 1em / 1em;
+  //border: 5px solid lightgray;
+}
+
+#projectsWrap {
+    background: $tertiaryColor;
+    padding: 3%
+}
+
+#projectsCardsDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.projectCards {
+  font-family: "Josefin Sans";
+  font-size: 25px;
+  width: 50%;
+  height:fit-content;
+  margin: 20px;
+  border-radius: 1%;
+  border: 5px solid lightgray;
+  overflow: hidden;
+}
+
+.projectContent {
+  padding-top: 80px;
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: opacity 0.2s;
+}
+
+.projectContent:hover {
+  opacity: 1;
+}
+
+.basicButton {
+  background-color: $secondaryColor;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 3em / 4em;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.basicButton:hover, .smallButton:hover {
+  background-color: $tertiaryColor;
+  border-color: $secondaryColor;
+}
+
+.smallButton {
+  background-color: $secondaryColor;
+  color: white;
+  font-size: 20px;
+  margin: 0 25% 10px;
+  padding: 8px 8px;
+  border-radius: 3em / 4em;
+  transition: background-color 0.2s;
+  text-decoration: none;
+}
+
+#aboutHeader {
+  padding: 20px 10px 50px;
+  background-color: $primaryColor;
+  text-align: center;
+  color: white;
+  font-family: 'Berkshire Swash';
+}
+
+#aboutBody {
+  margin: 30px;
+  font-size: 20px;
+}
